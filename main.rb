@@ -25,7 +25,7 @@ else
   raise "Error, something went wrong checking for your user info #{response.inspect}"
 end
 
-if user_info['location_id_list'].count > 0
+if user_info['location_id_list'].count == 0
   puts "Somehow, there are no locations listed on your user profile."
   exit 1
 elsif user_info['location_id_list'].count > 0
